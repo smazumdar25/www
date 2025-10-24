@@ -1,0 +1,1192 @@
+v<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumya Mazumdar</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/Signature.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="assets/images/Signature-removebg-preview.png" alt="Soumya Mazumdar" width="80">
+        </figure>
+
+<div class="info-content">
+  <h1 class="name" title="Soumya Mazumdar">Soumya Mazumdar</h1>
+  <p class="title"><span class="prefix">I am</span><span class="dynamic"></span></p>
+</div>
+
+<style>
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .dynamic {
+    border-right: 2px solid #555;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  const titles = [" a Researcher ", " a Student ", " a Data Scientist ", " a Tech Enthusiast ", " an Author ", " an Innovator ", " an Entrepreneur "];
+  let dynamicElement = document.querySelector(".dynamic");
+  let currentTitle = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+    let current = titles[currentTitle];
+    if (isDeleting) {
+      dynamicElement.textContent = current.substring(0, charIndex--);
+    } else {
+      dynamicElement.textContent = current.substring(0, charIndex++);
+    }
+
+    if (!isDeleting && charIndex === current.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1200); // pause before deleting
+      return;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      currentTitle = (currentTitle + 1) % titles.length; // move to next
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+  }
+
+  typeEffect();
+</script>
+
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">
+                Email: <br>
+                <a href="mailto:reachme@soumyamazumdar.com" class="contact-link">reachme [at] soumyamazumdar.com</a>
+              </p>
+
+            </div>
+
+          </li>
+<!--
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917278422901" class="contact-link">+91 7278 422901</a>
+            </div>
+
+          </li>
+-->
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>232, M.G. Road, Kolkata-104 (WB), India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+<ul class="social-list">
+
+  <li class="social-item">
+    <a href="https://www.linkedin.com/in/soumyamazumdar" target="_blank" class="social-link" title="LinkedIn">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://www.facebook.com/mazumdarsoumya" target="_blank" class="social-link" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://www.instagram.com/soumyamazumdar" target="_blank" class="social-link" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+
+  <li class="social-item">
+  <a href="https://orcid.org/0009-0006-3521-9557" target="_blank" class="social-link" title="ORCID">
+    <img class="brand-icon" src="https://cdn.simpleicons.org/orcid/9aa0a6" alt="ORCID">
+  </a>
+</li>
+
+<li class="social-item">
+  <a href="https://www.scopus.com/authid/detail.uri?authorId=59914192700" target="_blank" class="social-link" title="Scopus">
+    <img class="brand-icon" src="https://cdn.simpleicons.org/scopus/9aa0a6" alt="Scopus">
+  </a>
+</li>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+      <!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+    -->
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m Soumya Mazumdar — making complex science actually useful (and occasionally hilarious). I juggle a BS in Data Science @ IIT Madras and a B.Tech in CSE&BS @ MAKAUT, co-author books, publish papers, and tinker with ML, robotics, IoT, and 6G—all before my morning coffee cools. From cancer research to collision-avoidance systems, if it has real-world impact, I’m probably already elbow-deep in it.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Maulana Abul Kalam Azad University of Technology</h4>
+
+              <span>2023 — 2027</span>
+
+              <p class="timeline-text">
+                Bachelor of Technology - BTech, Computer Science Engineering & Business Systems (CSE&BS)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Indian Institute of Technology Madras</h4>
+
+              <span>2023 — 2027</span>
+
+              <p class="timeline-text">
+                Bachelor of Science - BS, Data Science & Applications
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+<!--
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+
+
+        <!--
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+</div>
+          </section>
+-->
+        
+
+
+        <!--
+          - clients
+        -->
+          <section class="clients">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Skills</h3>
+          </div>
+          <ul class="clients-list has-scrollbar">
+                <!-- Core Language -->
+                 <li class="clients-item">
+       <a href="#">
+        <img src="./assets/images/logo-1-color.png" alt="Python" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+
+    <!-- Documentation -->
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-2-color.svg" alt="LaTeX Documentation" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+
+    <!-- Backend -->
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-9-color.png" alt="Flask Backend" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-7-color.png" alt="C Programming" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-8-color.png" alt="C++ Programming" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-11-color.png" alt="C# Programming" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <!-- Frontend -->
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-3-color.png" alt="HTML5" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-4-color.webp" alt="CSS3" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-5-color.png" alt="JavaScript" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-6-color.png" alt="Bootstrap" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-10-color.png" alt="MS Office" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-15-color.png" alt="G Suite" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-12-color.png" alt="VS" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-13-color.png" alt="MatLab" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+    <li class="clients-item">
+      <a href="#">
+        <img src="./assets/images/logo-14-color.svg" alt="NumPY" style="height:40px; object-fit:contain;">
+      </a>
+    </li>
+  </ul>
+</section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+        <article class="experience" data-page="experience">
+
+  <header>
+    <h2 class="h2 article-title">Experience</h2>
+  </header>
+
+  <section class="timeline">
+
+    <!-- 1) Academic & Research -->
+    <div class="title-wrapper timeline-category">
+      <div class="icon-box">
+        <ion-icon name="school-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <h3 class="h3">Academic & Research</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Research Trainee — Variable Energy Cyclotron Centre (VECC), Government of India (GoI)</h4>
+        <span>Mar 2025 — Oct 2025</span>
+        <p class="timeline-text">
+          Built foundations in ML/DL; literature survey and practical implementations for Talking Head Generation.
+        </p>
+      </li>
+    </ol>
+
+    <!-- 2) Industry & Entrepreneurship -->
+    <div class="title-wrapper timeline-category">
+      <div class="icon-box">
+        <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <h3 class="h3">Industry & Entrepreneurship</h3>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Co-Founder — MSG Group</h4>
+        <span>Apr 2019 — Present</span>
+        <p class="timeline-text">
+          Co-founded to help underprivileged sellers reach international markets; expanded into software development and publications.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Co-Founder — Oniroop Herbal</h4>
+        <span>Jun 2022 — Present</span>
+        <p class="timeline-text">
+          Led strategic partnerships and product development; integrated sustainable practices in herbal wellness.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Market Research Analyst — JITSIE, IIT Madras</h4>
+        <span>Sep 2024 — Mar 2025</span>
+        <p class="timeline-text">
+          Supported investment narratives with market intelligence for deep-tech ideas and ventures.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Head — Technical Department, Adhyayan (LearnAdhyayan)</h4>
+        <span>Aug 2021 — Aug 2023</span>
+        <p class="timeline-text">
+          Built and deployed customer-facing systems; reduced downtime by ~50% in 6 months; developed a new website.
+        </p>
+      </li>
+    </ol>
+
+    <!-- 3) Social Work & Community -->
+    <!--
+    <div class="title-wrapper timeline-category">
+      <div class="icon-box">
+        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <h3 class="h3">Social Work & Community</h3>
+    </div>
+
+    <ol class="timeline-list">
+      -->
+      <!-- Add your NGO/volunteering roles here -->
+      <!-- Example (replace with real details):
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Volunteer — Taltala Sporting Association</h4>
+        <span>YYYY — YYYY</span>
+        <p class="timeline-text">
+          Brief impact-oriented line about your contribution, initiative, or program outcomes.
+        </p>
+      </li>
+      -->
+      <!--
+    </ol>
+-->
+    <!-- 4) Others -->
+    <div class="title-wrapper timeline-category">
+      <div class="icon-box">
+        <ion-icon name="grid-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <h3 class="h3">Other Activities</h3>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Eastern Zonal Secretary & Technical Recruiter — Dhyan Chand Sports Council, IIT Madras</h4>
+        <span>Jul 2023 — Dec 2023</span>
+        <p class="timeline-text">
+          Coordinated Savaan 2023; promoted inclusive participation across Eastern Zone; interviewer for 100+ candidates.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Public Relations — IITM Diplomacia</h4>
+        <span>Jul 2023 — Sep 2023</span>
+        <p class="timeline-text">
+          Drove PR campaigns with 111% engagement growth and 18% higher brand recognition in one month.
+        </p>
+      </li>
+
+      <!-- Example placeholder for Paradox (replace with your real entry) -->
+      <!--
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">[Role] — Paradox</h4>
+        <span>YYYY — YYYY</span>
+        <p class="timeline-text">One-line summary of what you did and the outcome.</p>
+      </li>
+      -->
+    </ol>
+
+  </section>
+</article>
+
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+<article class="publications" data-page="publications">
+  <header>
+    <h2 class="h2 article-title">Publications</h2>
+  </header>
+
+  <!-- === FILTER BAR === -->
+  <ul class="filter-list">
+  <li class="filter-item"><button class="active" data-filter="all">All</button></li>
+  <li class="filter-item"><button data-filter="Article">Article</button></li>
+  <li class="filter-item"><button data-filter="Book">Book</button></li>
+  <li class="filter-item"><button data-filter="Conference">Conference</button></li>
+  <li class="filter-item"><button data-filter="ArXiv">ArXiv</button></li>
+</ul>
+
+<section class="yearwise">
+
+  <!-- ===== 2025 ===== -->
+  <h3 class="year-heading">2025</h3>
+
+  <!-- 1) Solo -->
+  <ul class="pub-list">
+    <!-- (No solo-author items in 2025) -->
+  </ul>
+
+  <!-- 2) First Author -->
+  <ul class="pub-list">
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>, Itu Chowdhury,
+      “Integration of Machine Learning, Deep Learning, and Internet of Things Technologies for Stress Management and Identification: A Systematic Analysis,”
+      <i>Human Centric Integration of Next Generation Data Science and Blockchain Technology: Advancing Society 5.0 Paradigms</i>, 2025, pp. 407–418.
+    </li>
+
+    <li data-type="Book">
+      Angshuman Majumdar, Itu Chowdhury, <b>Soumya Mazumdar</b>
+      <i>Learning Evolution &amp; Future in Industry 5.0</i>,
+      The Conscience Publication, 2025.
+    </li>
+
+  </ul>
+
+  <!-- 3) Other -->
+  <ul class="pub-list">
+
+    <li data-type="ArXiv">
+      Vineet Kumar Rakesh, <b>Soumya Mazumdar</b>, Tapas Samanta, Sarbajit Pal, Amitabha Das,
+      “Impact of Hyperparameter Optimization on the Accuracy of Lightweight Deep Learning Models for Real-Time Image Classification,”
+      <i>arXiv preprint arXiv:2507.23315</i>, 2025,
+      doi:<a href="https://doi.org/10.48550/ARXIV.2507.23315">10.48550/ARXIV.2507.23315</a>
+    </li>
+
+  </ul>
+
+
+  <!-- ===== 2024 ===== -->
+  <h3 class="year-heading">2024</h3>
+
+  <!-- 1) Solo -->
+  <ul class="pub-list">
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>,
+      “Optical Mapping Methods for Treating Cancer in Low- and Middle-Income Countries like India,”
+      <i>International Journal of Contemporary Medicine</i>, vol. 12, no. 2, June 2024,
+      doi:<a href="https://doi.org/10.37506/qranvz77">10.37506/qranvz77</a>
+    </li>
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>,
+      “AI-POWERED PRODUCT DATA MANAGEMENT IN INDUSTRY 4.0: A BIBLIOGRAPHICAL ANALYSIS,”
+      Unpublished, 2024,
+      doi:<a href="https://doi.org/10.13140/RG.2.2.21326.68161">10.13140/RG.2.2.21326.68161</a>
+    </li>
+
+  </ul>
+
+  <!-- 2) First Author -->
+  <ul class="pub-list">
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>, Hiranmoy Samanta, et al.,
+      “AI Based PDM in Manufacturing Industry 4.0,”
+      <i>International Journal of Engineering Research &amp; Technology (IJERT)</i>, 2024,
+      doi:<a href="https://doi.org/10.17577/IJERTV13IS040310">10.17577/IJERTV13IS040310</a>
+    </li>
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>, et al.,
+      “Collision Avoidance Systems for Vehicle Safety Using Ultrasonic Distance Sensing Eye Blink Sensor and Alcohol Detector,”
+      <i>International Journal of Innovative Science and Research Technology (IJISRT)</i>, Apr. 2024, pp. 684–692,
+      doi:<a href="https://doi.org/10.38124/ijisrt/ijisrt24apr1634">10.38124/ijisrt/ijisrt24apr1634</a>
+    </li>
+
+    <li data-type="Conference">
+      Abhijit Majumder, Biman Ghosh, Srijita Bhattacharyya, <b>Soumya Mazumdar</b>, Hiranmoy Samanta,
+      “Data Driven Approach for Smart Manufacturing Industry 5.0,”
+      <i>National Symposium (Acropolis Institute of Technology &amp; Research)</i>, 2024.
+    </li>
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>, et al.,
+      “Design and Development of Real-Time Code Editor for Collaborative Programming,”
+      <i>International Advanced Research Journal in Science, Engineering and Technology</i>, 2024,
+      doi:<a href="https://doi.org/10.17148/IARJSET.2024.11447">10.17148/IARJSET.2024.11447</a>
+    </li>
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>,
+      “Encouraging Agricultural Innovation,”
+      <i>International Journal of Research Publication and Reviews</i>, 2024.
+    </li>
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>,
+      “Environmental Monitoring,”
+      <i>International Journal of All Research Education and Scientific Methods (IJARESM)</i>, 2024,
+      doi:<a href="https://doi.org/10.56025/IJARESM.2023.120124360">10.56025/IJARESM.2023.120124360</a>
+    </li>
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>, Itu Chowdhury Gupta, et al.,
+      “Influence of AI Technology in Education,”
+      <i>Education, Technology and Sustainability</i>, 2024.
+    </li>
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>, et al.,
+      “MACHINE LEARNING IN THE WORKPLACE AND IN EDUCATION FOR STRESS MANAGEMENT,”
+      <i>International Journal of Progressive Research in Engineering Management and Science (IJPREMS)</i>, 2024.
+    </li>
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>, Shivam Chowdhury, et al.,
+      “Radar System Utilizing Arduino,”
+      <i>International Journal of Research Publication and Reviews</i>, 2024.
+    </li>
+
+    <li data-type="Conference">
+      <b>Soumya Mazumdar</b>, Itu Chowdhury Gupta, et al.,
+      “ROLE OF TECHNOLOGY IN COMBATING CYBER CRIMES,”
+      <i>CYBER CRIMES AND ENVIRONMENTAL SUSTAINABILITY IN INDIA</i>, 2024.
+    </li>
+
+    <li data-type="Conference">
+      <b>Soumya Mazumdar</b>, et al.,
+      “Sustainable Building Practices in Infrastructure,”
+      <i>Third Regional Conclave of IEI Students’ Chapters (Eastern Region)</i>, 2024.
+    </li>
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>,
+      “IOT-ENABLED WIRELESS SENSOR NETWORK-BASED EARLY DETECTION SYSTEM,”
+      <i>International Research Journal of Education and Technology</i>, 2024.
+    </li>
+
+    <li data-type="Conference">
+      <b>Soumya Mazumdar</b>,
+      “Sustainable Practices In Healthcare Facilities,”
+      <i>India@2047 by Maharaja Agrasen College, University of Delhi</i>, 2024.
+    </li>
+
+  </ul>
+
+  <!-- 3) Other -->
+  <ul class="pub-list">
+
+    <li data-type="Article">
+      <b>Soumya Mazumdar</b>, et al.,
+      "IOT-ENABLED SMART MANUFACTURING TECHNOLOGIES IN INDUSTRY 4.0: PATHWAYS AND PRACTICES"
+      <i>International Research Journal of Modernization in Engineering Technology and Science</i>, Apr. 2024,
+      doi:<a href="https://doi.org/10.56726/irjmets54091">10.56726/irjmets54091</a>
+    </li>
+
+  </ul>
+
+</section>
+
+</article>
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+  <figure>
+    <iframe
+      title="Map — R. C. Thakurani Post Office"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.1886939537176!2d88.32385237503672!3d22.459542379572394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027079019d8cbd%3A0x4a111a047cc52caf!2sR%20.C.%20Thakurani%20Post%20Office!5e0!3m2!1sen!2sin!4v1761120021985!5m2!1sen!2sin"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </figure>
+</section>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+<form id="contact-form" class="form" data-form>
+  <div class="input-wrapper">
+    <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+    <input type="email" name="email" class="form-input" placeholder="Email address" required>
+  </div>
+
+  <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+
+  <button class="form-btn" type="submit">
+    <ion-icon name="paper-plane"></ion-icon>
+    <span>Send Message</span>
+  </button>
+</form>
+
+<p id="form-status" class="form-status"></p>
+
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!-- your Publications article goes above this -->
+<!-- it must include: <script type="text/plain" id="bib-inline"> ... </script> -->
+
+<!-- Custom site JS -->
+<script src="script.js" defer></script>
+
+<!-- Icons (optional) -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- BibTeX parser (must be before publications.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bibtex-parse-js@2.0.2/dist/bibtexParse.min.js" defer></script>
+
+<!-- Our renderer (inline-only version you’re using) -->
+<script src="./assets/js/publications.js" defer></script>
+
+
+</body>
+
+</html>
