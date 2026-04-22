@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumya Mazumdar</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/Signature.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+<aside class="sidebar" data-sidebar>
+  <div class="sidebar-top">
+    <figure class="avatar-box">
+      <img src="assets/images/Photo.png" alt="Soumya Mazumdar" width="80">
+    </figure>
+
+    <div class="info-content">
+      <h1 class="name" title="Soumya Mazumdar">Soumya Mazumdar</h1>
+      <p class="title">
+        <span class="prefix">I am</span>
+        <span class="dynamic"></span>
+      </p>
+
+      <div class="focus-tags">
+        <span>AI/ML</span>
+        <span>DS</span>
+        <span>CV</span>
+        <span>Research</span>
+      </div>
+
+      <div class="sidebar-actions">
+        <a href="assets/SoumyaMazumdar_CV.pdf" class="sidebar-btn primary" target="_blank">Resume</a>
+        <button class="sidebar-btn secondary chat-btn" id="contact-shortcut" type="button"><span>Let's Talk</span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-bottom">
+    <div class="separator"></div>
+
+    <ul class="contacts-list">
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <div class="contact-info">
+          <p class="contact-title">Email</p>
+          <a href="mailto:reachme@soumyamazumdar.com" class="contact-link">
+            reachme [at] soumyamazumdar.com
+          </a>
+        </div>
+      </li>
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="location-outline"></ion-icon>
+        </div>
+        <div class="contact-info">
+          <p class="contact-title">Location</p>
+          <address>232, M.G. Road, Kolkata-104 (WB), India</address>
+        </div>
+      </li>
+    </ul>
+
+    <div class="separator"></div>
+
+<ul class="social-list">
+  <li class="social-item">
+    <a href="https://www.linkedin.com/in/soumyamazumdar" target="_blank" class="social-link">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://www.instagram.com/soumyamazumdar" target="_blank" class="social-link">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://github.com/mazumdarsoumya" target="_blank" class="social-link">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://scholar.google.com/citations?user=04jO_twAAAAJ&hl=en" target="_blank" class="social-link">
+      <img class="brand-icon" src="https://cdn.simpleicons.org/googlescholar/9aa0a6" alt="Google Scholar">
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://orcid.org/0009-0006-3521-9557" target="_blank" class="social-link">
+      <img class="brand-icon" src="https://cdn.simpleicons.org/orcid/9aa0a6" alt="ORCID">
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://www.scopus.com/authid/detail.uri?authorId=59914192700" target="_blank" class="social-link">
+      <img class="brand-icon" src="https://cdn.simpleicons.org/scopus/9aa0a6" alt="Scopus">
+    </a>
+  </li>
+</ul>
+</div>
+</aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <div class="content-topbar">
+  <h2 class="content-page-title" id="content-page-title">About Me</h2>
+
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li class="navbar-item">
+        <button class="navbar-link active" data-nav-link>About</button>
+      </li>
+
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link>Experience</button>
+      </li>
+
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link>Publications</button>
+      </li>
+
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link>Contact</button>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+
+  <section class="about-intro">
+    <p>
+      Hi, I’m Soumya - I work on AI systems, with a focus on computer vision. I enjoy building models, experimenting with research ideas, and writing bugs so creative they feel intentional. Most of my workflow involves training networks, reading papers, and pretending final_final_v3 is a perfectly reasonable folder name.
+    </p>
+  </section>
+
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Education</h3>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Maulana Abul Kalam Azad University Of Technology</h4>
+        <span>2023 — 2027</span>
+        <p class="timeline-text">
+          Bachelor of Technology - BTech, Computer Science Engineering &amp; Business Systems (CSE&amp;BS)
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Indian Institute Of Technology Madras</h4>
+        <span>2023 — 2027</span>
+        <p class="timeline-text">
+          Bachelor of Science - BS, Data Science &amp; Applications
+        </p>
+      </li>
+
+    </ol>
+  </section>
+
+  <section class="clients skills-marquee">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="code-slash-outline"></ion-icon>
+    </div>
+    <h3 class="h3">Skills</h3>
+  </div>
+
+  <ul class="clients-list">
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-1-color.png" alt="Python"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-2-color.svg" alt="LaTeX"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-9-color.png" alt="Flask"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-7-color.png" alt="C"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-8-color.png" alt="C++"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-11-color.png" alt="C#"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-3-color.png" alt="HTML5"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-4-color.webp" alt="CSS3"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-5-color.png" alt="JavaScript"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-6-color.png" alt="Bootstrap"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-10-color.png" alt="MS Office"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-15-color.png" alt="G Suite"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-12-color.png" alt="Visual Studio"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-13-color.png" alt="MATLAB"></a></li>
+    <li class="clients-item"><a href="#"><img src="./assets/images/logo-14-color.svg" alt="NumPy"></a></li>
+  </ul>
+</section>
+
+</article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+        <article class="experience" data-page="experience">
+
+  <header>
+    <h2 class="h2 article-title">Experience</h2>
+  </header>
+
+  <section class="timeline">
+
+    <!-- 1) Academic & Research -->
+    <div class="title-wrapper timeline-category">
+      <div class="icon-box">
+        <ion-icon name="school-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <h3 class="h3">Academic & Research</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Research Trainee — Variable Energy Cyclotron Centre (VECC), Government of India (GoI)</h4>
+        <span>Mar 2025 — Oct 2025</span>
+        <p class="timeline-text">
+          Built foundations in ML/DL; literature survey and practical implementations for Talking Head Generation.
+        </p>
+      </li>
+    </ol>
+
+    <!-- 2) Industry & Entrepreneurship -->
+    <div class="title-wrapper timeline-category">
+      <div class="icon-box">
+        <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <h3 class="h3">Industry & Entrepreneurship</h3>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Co-Founder — MSG Group</h4>
+        <span>Apr 2019 — Present</span>
+        <p class="timeline-text">
+          Co-founded to help underprivileged sellers reach international markets; expanded into software development and publications.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Co-Founder — Oniroop Herbal</h4>
+        <span>Jun 2022 — Present</span>
+        <p class="timeline-text">
+          Led strategic partnerships and product development; integrated sustainable practices in herbal wellness.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Market Research Analyst — JITSIE, IIT Madras</h4>
+        <span>Sep 2024 — Mar 2025</span>
+        <p class="timeline-text">
+          Supported investment narratives with market intelligence for deep-tech ideas and ventures.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Head — Technical Department, Adhyayan (LearnAdhyayan)</h4>
+        <span>Aug 2021 — Aug 2023</span>
+        <p class="timeline-text">
+          Built and deployed customer-facing systems; reduced downtime by ~50% in 6 months; developed a new website.
+        </p>
+      </li>
+    </ol>
+
+    <!-- 3) Social Work & Community -->
+    <!--
+    <div class="title-wrapper timeline-category">
+      <div class="icon-box">
+        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <h3 class="h3">Social Work & Community</h3>
+    </div>
+
+    <ol class="timeline-list">
+      -->
+      <!-- Add your NGO/volunteering roles here -->
+      <!-- Example (replace with real details):
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Volunteer — Taltala Sporting Association</h4>
+        <span>YYYY — YYYY</span>
+        <p class="timeline-text">
+          Brief impact-oriented line about your contribution, initiative, or program outcomes.
+        </p>
+      </li>
+      -->
+      <!--
+    </ol>
+-->
+    <!-- 4) Others -->
+    <div class="title-wrapper timeline-category">
+      <div class="icon-box">
+        <ion-icon name="grid-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <h3 class="h3">Other Activities</h3>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Eastern Zonal Secretary & Technical Recruiter — Dhyan Chand Sports Council, IIT Madras</h4>
+        <span>Jul 2023 — Dec 2023</span>
+        <p class="timeline-text">
+          Coordinated Savaan 2023; promoted inclusive participation across Eastern Zone; interviewer for 100+ candidates.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Public Relations — IITM Diplomacia</h4>
+        <span>Jul 2023 — Sep 2023</span>
+        <p class="timeline-text">
+          Drove PR campaigns with 111% engagement growth and 18% higher brand recognition in one month.
+        </p>
+      </li>
+
+      <!-- Example placeholder for Paradox (replace with your real entry) -->
+      <!--
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">[Role] — Paradox</h4>
+        <span>YYYY — YYYY</span>
+        <p class="timeline-text">One-line summary of what you did and the outcome.</p>
+      </li>
+      -->
+    </ol>
+
+  </section>
+</article>
+
+<article class="publications" data-page="publications">
+  <header>
+    <h2 class="h2 article-title">Publications</h2>
+  </header>
+
+  <ul class="filter-list">
+    <li class="filter-item"><button class="active" data-filter="all">All</button></li>
+    <li class="filter-item"><button data-filter="Journal">Journal</button></li>
+    <li class="filter-item"><button data-filter="Patent">Patent</button></li>
+    <li class="filter-item"><button data-filter="Conference">Conference</button></li>
+    <li class="filter-item"><button data-filter="Book">Book Chapter</button></li>
+  </ul>
+
+  <section class="yearwise">
+
+    <h3 class="year-heading">2026</h3>
+
+    <ul class="pub-list">
+
+      <li data-type="Journal">
+        Vineet Kumar Rakesh, <b>Soumya Mazumdar</b>, Tapas Samanta, Himanshu Kumar Pandey, Amitabha Das, &amp; Sarbajit Pal,
+        “Analysis of Hyperparameter Optimization Effects on Lightweight Deep Models for Real-Time Image Classification,”
+        <i>Scientific Reports</i>, 2026,
+        doi:<a href="https://doi.org/10.1038/s41598-026-42748-w">10.1038/s41598-026-42748-w</a>
+      </li>
+
+      <li data-type="Journal">
+        Vineet Kumar Rakesh, <b>Soumya Mazumdar</b>, Research Pratim Maity, Sarbajit Pal, Amitabha Das, &amp; Tapas Samanta,
+        “Advancing Talking Head Generation: A Comprehensive Survey of Multi-Modal Methodologies, Datasets, Evaluation Metrics, and Loss Functions,”
+        <i>The Visual Computer</i>, vol. 42, no. 9, 2026,
+        doi:<a href="https://doi.org/10.1007/s00371-025-04232-w">10.1007/s00371-025-04232-w</a>
+      </li>
+
+      <li data-type="Journal">
+        <b>Soumya Mazumdar</b>, Vineet Kumar Rakesh, &amp; Tapas Samanta,
+        “PrivFedTalk: Privacy-Aware Federated Diffusion with Identity-Stable Adapters for Personalized Talking-Head Generation,”
+        <i>IEEE Transactions on Circuits and Systems for Video Technology</i>, under review, 2026.
+        arXiv:<a href="https://arxiv.org/abs/2604.08037">2604.08037</a>
+      </li>
+
+      <li data-type="Journal">
+        Vineet Kumar Rakesh, <b>Soumya Mazumdar</b>, Tapas Samanta, Himanshu Kumar Pandey, Amitabha Das, &amp; Sarbajit Pal,
+        “Adaptive Video Conferencing Under Severe Bandwidth Constraints Using Audio-Driven Talking-Head Reconstruction,”
+        <i>Engineering</i>, under review, 2026.
+        arXiv:<a href="https://arxiv.org/abs/2602.12758">2602.12758</a>
+      </li>
+
+      <li data-type="Journal">
+        Vineet Kumar Rakesh, Abhijit Bhattacharjee, <b>Soumya Mazumdar</b>, Tapas Samanta, Himanshu Kumar Pandey, Amitabha Das, &amp; Sarbajit Pal,
+        “Symbolic Vedic Computation for Low-Resource Talking-Head Generation in Educational Avatars,”
+        <i>IEEE Transactions on Multimedia</i>, under review, 2026.
+        arXiv:<a href="https://arxiv.org/abs/2602.08775">2602.08775</a>
+      </li>
+
+      <li data-type="Journal">
+        Vineet Kumar Rakesh, <b>Soumya Mazumdar</b>, Abhijit Bhattacharjee, Tapas Samanta, Himanshu Kumar Pandey, Amitabha Das, &amp; Sarbajit Pal,
+        “Bandwidth-Aware Performance Analysis of Video Conferencing Platforms,”
+        <i>Multimedia Tools and Applications</i>, under review, 2026.
+      </li>
+    </ul>
+
+    <ul class="pub-list">
+      <li data-type="Patent">
+        <b>Soumya Mazumdar</b>, S. Saha, M. Roy, S. Kundu, P. K. Halder, S. Das, U. Adhikari, &amp; L. Nayak,
+        “Handheld Device for Real-Time Neural Network Analysis,”
+        Patent No. 490413–001, Controller General of Patents, Designs &amp; Trade Marks, Kolkata, 2026.
+        <a href="https://ipindia.gov.in">Official source</a>
+      </li>
+    </ul>
+
+    <ul class="pub-list">
+
+      <li data-type="Conference">
+        <b>Soumya Mazumdar</b>, Vineet Kumar Rakesh, &amp; Tapas Samanta,
+        “BayesFusion-SDF: Probabilistic Signed Distance Fusion with View Planning on CPU,”
+        <i>IEEE 5th International Conference on Intelligent Reality (ICIR 2026)</i>, accepted, 2026.
+        arXiv:<a href="https://arxiv.org/abs/2602.19697">2602.19697</a>
+      </li>
+
+      <li data-type="Conference">
+        Vineet Kumar Rakesh, <b>Soumya Mazumdar</b>, Research Pratim Maity, Tapas Samanta, Himanshu Kumar Pandey, &amp; Amitabha Das,
+        “Empirical Evaluation of State-of-the-Art Talking Head Generation Models,”
+        in <i>International Conference on Recent Advances in Artificial Intelligence &amp; Smart Applications (RAAISA 2025)</i>,
+        Lecture Notes in Networks and Systems, Springer, 2026. Yet to publish.
+      </li>
+
+      <li data-type="Conference">
+        Vineet Kumar Rakesh, Mo Moin, B. Sarkar, <b>Soumya Mazumdar</b>, Tapas Samanta, Himanshu Kumar Pandey, &amp; Amitabha Das,
+        “THGNLR: An Intelligent Application for Automated, Large-Scale Multimodal Human Audio-Video Data Acquisition and Auto-Cleansing,”
+        in <i>International Conference on Advancement of Intelligent Computing in Data Analysis and Knowledge Discovery (AICDAKD 2025)</i>,
+        Lecture Notes in Networks and Systems, Springer, 2026. Yet to publish.
+      </li>
+
+      <li data-type="Conference">
+        <b>Soumya Mazumdar</b> &amp; Vineet Kumar Rakesh,
+        “TempoSyncDiff: Distilled Temporally-Consistent Diffusion for Low-Latency Audio-Driven Talking Head Generation,”
+        <i>19th European Conference on Computer Vision (ECCV 2026)</i>, under review, 2026.
+        arXiv:<a href="https://arxiv.org/abs/2603.06057">2603.06057</a>
+      </li>
+    </ul>
+
+    <ul class="pub-list">
+      <li data-type="Book">
+        <b>Soumya Mazumdar</b> &amp; H. Hosni,
+        “Machine Learning and Deep Learning: Necessary Techniques for Extracting Meaningful Information in Large Databases,”
+        in <i>Next Generation Blockchain for Next Generation Society with Futuristic Technologies</i>,
+        CRC Press (Taylor &amp; Francis), 2026,
+        doi:<a href="https://doi.org/10.1201/9781003620822-20">10.1201/9781003620822-20</a>
+      </li>
+
+      <li data-type="Book">
+        Vineet Kumar Rakesh, <b>Soumya Mazumdar</b>, Research Pratim Maity, Sarbajit Pal, Amitabha Das, &amp; Tapas Samanta,
+        “Transparent and Trustworthy Data Practices for Talking Head Generation: A Comprehensive Survey of Datasets and Ethical Implications,”
+        in <i>Centering Transparency and Trust in Data and AI Ecosystems</i>,
+        IGI Global Scientific Publishing, 2026. Yet to publish.
+      </li>
+    </ul>
+
+    <h3 class="year-heading">2025</h3>
+
+    <ul class="pub-list">
+      <li data-type="Journal">
+        Vineet Kumar Rakesh, <b>Soumya Mazumdar</b>, Research Pratim Maity, Sarbajit Pal, Amitabha Das, &amp; Tapas Samanta,
+        “Quantitative Assessment in Talking Head Generation: A Comprehensive Review of Metrics and Loss Functions,”
+        <i>IET Software</i>, under review, 2025.
+      </li>
+    </ul>
+
+    <ul class="pub-list">
+      <li data-type="Book">
+        <b>Soumya Mazumdar</b>,
+        “Educational Implications of 6G Technology for Society 5.0,”
+        in <i>Human-Centric Integration of 6G-Enabled Technologies for Modern Society</i>,
+        Elsevier, 2025, pp. 255–265,
+        doi:<a href="https://doi.org/10.1016/B978-0-443-27434-3.00017-9">10.1016/B978-0-443-27434-3.00017-9</a>
+      </li>
+
+      <li data-type="Book">
+        <b>Soumya Mazumdar</b> &amp; Itu Chowdhury,
+        “Integration of Machine Learning, Deep Learning, and Internet of Things Technologies for Stress Management and Identification: A Systematic Analysis,”
+        in <i>Human-Centric Integration of Next-Generation Data Science and Blockchain Technology</i>,
+        Elsevier, 2025, pp. 407–418,
+        doi:<a href="https://doi.org/10.1016/B978-0-443-33498-6.00023-6">10.1016/B978-0-443-33498-6.00023-6</a>
+      </li>
+
+      <li data-type="Book">
+        H. Hosni &amp; <b>Soumya Mazumdar</b>,
+        “6G-Enabled Robotics: The Future of Connectivity in Smart Industrial Manufacturing,”
+        in <i>Industrial Robotics in Smart Manufacturing</i>,
+        CRC Press (Taylor &amp; Francis), 2025, pp. 241–258,
+        doi:<a href="https://doi.org/10.1201/9781003614470-12">10.1201/9781003614470-12</a>
+      </li>
+    </ul>
+
+  </section>
+</article>
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+
+  <div class="contact-layout">
+    <section class="mapbox" data-mapbox>
+      <figure>
+        <iframe
+          title="Map — R. C. Thakurani Post Office"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.1886939537176!2d88.32385237503672!3d22.459542379572394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027079019d8cbd%3A0x4a111a047cc52caf!2sR%20.C.%20Thakurani%20Post%20Office!5e0!3m2!1sen!2sin!4v1761120021985!5m2!1sen!2sin"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </figure>
+    </section>
+
+    <section class="contact-form">
+      <h3 class="h3 form-title">Contact Form</h3>
+
+      <form id="contact-form" class="form" data-form>
+        <div class="input-wrapper">
+          <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+          <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+        </div>
+
+        <textarea name="message" class="form-input" placeholder="Your message" required data-form-input></textarea>
+
+        <button class="form-btn" type="submit" data-form-btn>
+          <ion-icon name="paper-plane"></ion-icon>
+          <span>Send Message</span>
+        </button>
+      </form>
+
+      <p id="form-status" class="form-status"></p>
+    </section>
+  </div>
+
+</article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!-- your Publications article goes above this -->
+<!-- it must include: <script type="text/plain" id="bib-inline"> ... </script> -->
+
+<!-- Custom site JS -->
+<script src="script.js" defer></script>
+
+<!-- Icons (optional) -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- BibTeX parser (must be before publications.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bibtex-parse-js@2.0.2/dist/bibtexParse.min.js" defer></script>
+
+<!-- Our renderer (inline-only version you’re using) -->
+<script src="./assets/js/publications.js" defer></script>
+
+
+</body>
+
+</html>
